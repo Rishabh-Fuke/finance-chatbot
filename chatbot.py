@@ -3,7 +3,7 @@ import requests
 from dotenv import load_dotenv
 
 load_dotenv()
-WORKER_URL = os.getenv("CF_WORKER_URL")
+WORKER_URL = "https://openai-worker.rish-worker.workers.dev"
 
 def ask_openai(prompt):
     try:
